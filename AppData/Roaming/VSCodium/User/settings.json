@@ -1,0 +1,575 @@
+{
+	//Window
+	"window.zoomLevel": 1,
+	"workbench.editor.enablePreview": false,
+	"window.commandCenter": false,
+	"workbench.layoutControl.enabled": false,
+	"window.density.editorTabHeight": "compact",
+	"window.enableMenuBarMnemonics": false,
+	// Clipboard
+	"vim.useSystemClipboard": true,
+	//Editor
+	"editor.tabSize": 4,
+	"editor.fontSize": 16,
+	"editor.lineHeight": 24,
+	"editor.fontLigatures": true,
+	"editor.fontFamily": "'JetBrainsMono Nerd Font', 'monospace', monospace",
+	"editor.wordWrap": "bounded",
+	"editor.wrappingIndent": "same",
+	"editor.lineNumbers": "relative",
+	"editor.wordWrapColumn": 60,
+	"editor.folding": false,
+	"editor.insertSpaces": false,
+	"editor.smoothScrolling": true,
+	"editor.minimap.enabled": false,
+	"editor.detectIndentation": true,
+	"editor.suggestSelection": "first",
+	"editor.scrollBeyondLastLine": false,
+	"editor.renderControlCharacters": false,
+	"editor.unicodeHighlight.ambiguousCharacters": false,
+	"editor.quickSuggestionsDelay": 0,
+	"editor.cursorBlinking": "phase",
+	"editor.glyphMargin": false,
+	"editor.bracketPairColorization.enabled": false,
+	"editor.scrollbar.horizontal": "hidden",
+	"editor.scrollbar.vertical": "hidden",
+	"editor.hideCursorInOverviewRuler": true,
+	"editor.unicodeHighlight.allowedCharacters": {
+		"а": true,
+		"с": true,
+		"Т": true,
+		"б": true,
+		"е": true
+	},
+	"zenMode.fullScreen": false,
+	"zenMode.hideLineNumbers": false,
+	"zenMode.silentNotifications": false,
+
+	//Editor settings for formatting
+	"editor.formatOnSave": true,
+	"workbench.startupEditor": "none",
+	"window.openFilesInNewWindow": "off",
+
+	// Terminal
+	"terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'monospace', monospace",
+	"terminal.integrated.fontSize": 14,
+	"terminal.integrated.tabs.enabled": false,
+
+	//Explorer
+	"explorer.confirmDelete": false,
+	"explorer.compactFolders": false,
+	"explorer.confirmDragAndDrop": false,
+
+	//Emmet
+	"emmet.triggerExpansionOnTab": true,
+	"emmet.showExpandedAbbreviation": "never",
+
+	//Formatters
+	"prettier.semi": true,
+	"prettier.useTabs": true,
+	"prettier.singleQuote": false,
+	"prettier.jsxSingleQuote": false,
+	"prettier.arrowParens": "avoid",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.inlineSuggest.enabled": true,
+
+	// Files settings
+	"files.associations": { "*.scss": "postcss", "*.module.scss": "postcss" },
+
+	//Prisma Formatter
+	// "[prisma]": {
+	// 	"editor.defaultFormatter": "Prisma.prisma"
+	// },
+
+	//Breadcrumbs Off
+	"breadcrumbs.enabled": false,
+
+	// Java/Typescript
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"typescript.preferences.quoteStyle": "double",
+	"javascript.preferences.quoteStyle": "double",
+	"javascript.format.semicolons": "insert",
+	"typescript.format.semicolons": "insert",
+	"typescript.suggest.paths": false,
+	"javascript.suggest.paths": false,
+
+	//search exclusion
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/bower_components": true,
+		"**/*.code-search": true
+	},
+	// Telemetry (VSCODE)
+	"telemetry.telemetryLevel": "off",
+	"vim.leader": "<space>",
+	"vim.easymotion": true,
+	"vim.incsearch": true,
+	"vim.useCtrlKeys": true,
+	"vim.hlsearch": true,
+	"vim.highlightedyank.enable": true,
+	//vim insert mode keybinds
+	"vim.insertModeKeyBindings": [
+		{
+			"before": ["<leader>dd"],
+			"after": ["\"a", "dd"]
+		},
+		{
+			"before": ["<leader>dp"],
+			"after": ["\"ap"]
+		},
+		{
+			"before": ["j", "k"],
+			"after": ["<Esc>"]
+		}
+	],
+	"vim.commandLineModeKeyBindings": [
+		{
+			"before": ["j", "k"],
+			"after": ["<Esc>"]
+		}
+	],
+	// for nerdTree extension
+	"vim.handleKeys": {
+		"<C-n>": false
+		// "<C-c>": false,
+		// "<C-v>": false
+	},
+	"nerdtree.hidesidebarwhenopenfile": true,
+	// "nerdtree.alwaysShowSidebar": true,
+	"vim.normalModeKeyBindings": [
+		{
+			"before": ["<C-c>"],
+			"after": ["\"", "+", "y"]
+		},
+		{
+			"before": ["<C-v>"],
+			"after": ["\"", "+", "p"]
+		},
+		{
+			"before": ["<leader>y"], // Leader key followed by 'y' for copying
+			"after": ["\"", "+", "y"]
+		},
+		{
+			"before": ["<leader>p"], // Leader key followed by 'p' for pasting
+			"after": ["\"", "+", "p"]
+		},
+		{
+			"before": ["[", "{"],
+			"commands": [
+				"cursorMove",
+				{ "to": "wrappedLineFirstNonWhitespaceCharacter", "by": "wrappedLine" }
+			]
+		},
+		{
+			"before": ["]", "}"],
+			"commands": [
+				"cursorMove",
+				{ "to": "wrappedLineEnd", "by": "wrappedLine" }
+			]
+		},
+		{
+			"before": ["<leader>dd"],
+			"after": ["\"a", "dd"]
+		},
+		{
+			"before": ["<leader>dp"],
+			"after": ["\"ap"]
+		},
+		{
+			"before": ["<leader>", "z", "z"],
+			"commands": ["workbench.action.toggleZenMode"]
+		},
+		{
+			"before": ["<leader>", "t", "h"],
+			"commands": ["workbench.action.selectTheme"]
+		},
+		{
+			"before": ["<leader>", "e"],
+			"commands": ["workbench.view.explorer", "workbench.action.focusSideBar"]
+		},
+		{
+			"before": ["<leader>", "s", "a"],
+			"commands": ["editor.action.selectAll"]
+		},
+		// {
+		// 	"before": ["<leader>", "e"],
+		// 	"commands": ["workbench.view.explorer"]
+		// },
+
+		{
+			"before": ["<leader>", "w"],
+			"commands": ["workbench.action.files.save"]
+		},
+		{
+			"before": ["<leader>", "E"],
+			"commands": ["workbench.action.toggleSidebarVisibility"]
+		},
+		{
+			"before": ["<leader>", "q"],
+			"commands": ["workbench.action.closeActiveEditor"]
+		},
+		{
+			"before": ["<leader>", "h"],
+			"commands": [":nohl"]
+		},
+		{
+			"before": ["<leader>", "s", "v"],
+			"commands": ["workbench.action.splitEditor"]
+		},
+		{
+			"before": ["<leader>", "s", "h"],
+			"commands": ["workbench.action.splitEditorDown"]
+		},
+		{
+			"before": ["<leader>", "t", "o"],
+			"commands": [":tabnew"]
+		},
+		{
+			"before": ["<leader>", "t", "x"],
+			"commands": [":tabclose"]
+		},
+		{
+			"before": ["<S-h>"],
+			"commands": [":tabp"]
+		},
+		{
+			"before": ["<S-l>"],
+			"commands": [":tabnext"]
+		},
+		{
+			"before": ["<leader>", "f", "f"],
+			"commands": ["workbench.action.quickOpen"]
+		},
+		{
+			"before": ["<leader>", "f", "b"],
+			"commands": ["workbench.action.showAllEditors"]
+		},
+		{
+			"before": ["<leader>", "f", "s"],
+			"commands": ["workbench.action.findInFiles"]
+		},
+		{
+			"before": ["<leader>", "r", "n"],
+			"commands": ["editor.action.rename"]
+		},
+		{
+			"before": ["<leader>", "a", "f"],
+			"commands": ["editor.action.autoFix"]
+		},
+		{
+			"before": ["<leader>", "r", "a"],
+			"commands": ["editor.action.rename"]
+		},
+		{
+			"before": ["<leader>", "f", "m"],
+			"commands": ["editor.action.format"]
+		},
+		{
+			"before": ["<leader>", "c", "a"],
+			"commands": ["editor.action.quickFix"]
+		},
+		{
+			"before": ["<S-k>"],
+			"commands": ["editor.action.showHover"]
+		}
+	],
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": ["<Esc>"],
+			"commands": ["vim.editors.nohlsearch"]
+		},
+		{
+			"before": [" ", "v"],
+			"after": ["<C-v>"]
+		},
+		{
+			"before": ["dd"],
+			"after": ["\"*", "dd"]
+		},
+		// Custom paste from the '*' register using Ctrl+P and Ctrl+Shift+P
+		{
+			"before": ["<leader>dp"],
+			"after": ["\"*p"]
+		},
+		{
+			"before": ["<leader>dP"],
+			"after": ["\"*P"]
+		},
+
+		{
+			"before": ["<leader>", "o"],
+			"commands": [
+				"editor.action.jumpToBracket",
+				"editor.action.jumpToBracket",
+				"editor.action.jumpToBracket"
+			]
+		},
+		{ "before": ["c-d"], "after": ["c-d", "z", "z"] },
+		{ "before": ["c-u"], "after": ["c-u", "z", "z"] },
+		{ "before": ["n"], "after": ["n", "z", "z"] },
+		{ "before": ["N"], "after": ["N", "z", "z"] },
+		{
+			"before": ["leader", "f", "w"],
+			"after": ["y", "i", "w"],
+			"commands": [
+				"find-it-faster.findWithinFiles",
+				"workbench.action.terminal.paste"
+			]
+		},
+		{
+			"before": ["leader", "f", "W"],
+			"after": ["y", "i", "W"],
+			"commands": [
+				"find-it-faster.findWithinFiles",
+				"workbench.action.terminal.paste"
+			]
+		},
+		{ "before": ["c-m"], "commands": ["vscode-harpoon.addEditor"] },
+		{
+			"before": ["leader", "f", "m"],
+			"commands": ["vscode-harpoon.editEditors"]
+		},
+		{
+			"before": ["leader", "f", "k"],
+			"commands": ["vscode-harpoon.editorQuickPick"]
+		},
+		{ "before": ["leader", "1"], "commands": ["vscode-harpoon.gotoEditor1"] },
+		{ "before": ["leader", "2"], "commands": ["vscode-harpoon.gotoEditor2"] },
+		{ "before": ["leader", "3"], "commands": ["vscode-harpoon.gotoEditor3"] },
+		{ "before": ["leader", "4"], "commands": ["vscode-harpoon.gotoEditor4"] },
+		// moving up and down faster in normal mode using 'J' & 'K' instead of just 'j' & 'k'
+
+		// {
+		// 	"before": ["J"],
+		// 	"after": ["5", "j"]
+		// },
+		// {
+		// 	"before": ["K"],
+		// 	"after": ["5", "k"]
+		// },
+
+		// we've overwritten two Vim default bindings above J (join lines), although useful, is something that you do only from time to time. K is used for keyword search but isn’t yet implemented in VSCodeVim
+		// so we'll remap joining lines(j) using the '<leader>' key i.e. '<Space>'
+		// {
+		// 	"before": ["<Leader>", "j"],
+		// 	"after": ["J"]
+		// },
+
+		// For easier switching between split windows Using 'CTRL + h or j or k or l' for 'left or down or up or right' split window
+		// {
+		// 	"before": ["<C-h>"],
+		// 	"after": ["<C-w>", "h"]
+		// },
+		// {
+		// 	"before": ["<C-j>"],
+		// 	"after": ["<C-w>", "j"]
+		// },
+		// {
+		// 	"before": ["<C-k>"],
+		// 	"after": ["<C-w>", "k"]
+		// },
+		// {
+		// 	"before": ["<C-l>"],
+		// 	"after": ["<C-w>", "l"]
+		// },
+
+		// For easier tab handling & switching between different tabs inside a split window
+		// Instead of using before and after. We use before and commands. commands represent either the Ex commands or Visual Studio native commands that should be run whenever we type the key mapping defined by before.
+		// {
+		// 	"before": ["<Leader>", "t", "t"],
+		// 	"commands": [":tabnew"]
+		// },
+
+		// {
+		// 	"before": ["<Leader>", "t", "n"],
+		// 	"commands": [":tabnext"]
+		// },
+		// {
+		// 	"before": ["<Leader>", "t", "p"],
+		// 	"commands": [":tabprev"]
+		// },
+		// {
+		// 	"before": ["<Leader>", "t", "o"],
+		// 	"commands": [":tabo"]
+		// },
+
+		// For cleaning highlight for text after Searching for a pattern using '/{pattern}' or '?{pattern}'
+		{
+			"before": ["<Leader>", "/"],
+			"commands": [":noh"]
+		},
+
+		// For opening the command palette(CTRL+SHIFT+P) or go to symbol(CTRL+SHIFT+O) type <Leader>p and <Leader>t respectively and you’ll quickly access either of these panels.
+		{
+			"before": ["<Leader>", "p"],
+			"commands": ["workbench.action.showCommands"]
+		},
+		{
+			"before": ["<Leader>", "x"],
+			"commands": ["workbench.view.extensions"]
+		},
+		{
+			"key": "<leader> sk",
+			"command": "workbench.action.openGlobalKeybindings",
+			"when": "!inQuickOpen"
+		},
+		{
+			"before": ["<leader>", "s", "k"],
+			"commands": ["workbench.action.openGlobalKeybindings"]
+		}
+
+		// {
+		// 	"before": ["<Leader>", "t"],
+		// 	"commands": ["workbench.action.gotoSymbol"]
+		// }
+	],
+	"vim.visualModeKeyBindings": [
+		{
+			"before": ["<leader>y"], // Leader key followed by 'y' for copying in visual mode
+			"after": ["\"", "+", "y"]
+		},
+		{
+			"before": ["<leader>p"], // Leader key followed by 'p' for pasting in visual mode
+			"after": ["\"", "+", "p"]
+		},
+		{
+			"before": ["<C-c>"],
+			"after": ["\"", "+", "y"]
+		},
+		{
+			"before": ["<C-v>"],
+			"after": ["\"", "+", "p"]
+		},
+		{
+			"before": [">"],
+			"commands": ["editor.action.indentLines"]
+		},
+		{
+			"before": ["<"],
+			"commands": ["editor.action.outdentLines"]
+		},
+		{
+			"before": ["<S-j>"],
+			"commands": ["editor.action.moveLinesDownAction"]
+		},
+		{
+			"before": ["<S-k>"],
+			"commands": ["editor.action.moveLinesUpAction"]
+		}
+	],
+	"workbench.activityBar.location": "hidden",
+	"code-runner.enableAppInsights": false,
+	"code-runner.runInTerminal": true,
+	"code-runner.showExecutionMessage": false,
+	"editor.cursorSmoothCaretAnimation": "on",
+	"terminal.integrated.smoothScrolling": true,
+	"files.autoSave": "afterDelay",
+	"workbench.colorTheme": "Community Material Theme",
+	"files.exclude": {
+		"\"**/*.class": true
+	},
+	"code-runner.cwd": "true",
+	"code-runner.executorMapByFileExtension": {
+		".vb": "cd $dir && vbc /nologo $fileName && $dir$fileNameWithoutExt",
+		".vbs": "cscript //Nologo",
+		".scala": "scala",
+		".jl": "julia",
+		".cr": "crystal",
+		".ml": "ocaml",
+		".zig": "zig run",
+		".exs": "elixir",
+		".hx": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+		".rkt": "racket",
+		".scm": "csi -script",
+		".ahk": "autohotkey",
+		".au3": "autoit3",
+		"java": "cd $dir && javac $fileName && java -cp $dir ${fileDirname//\\/\\.}.$fileNameWithoutExt",
+		".kt": "cd $dir && kotlinc $fileName -include-runtime -d $fileNameWithoutExt.jar && java -jar $fileNameWithoutExt.jar",
+		".kts": "kotlinc -script",
+		".dart": "dart",
+		".pas": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+		".pp": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+		".d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+		".hs": "runhaskell",
+		".nim": "nim compile --verbosity:0 --hints:off --run",
+		".csproj": "dotnet run --project",
+		".fsproj": "dotnet run --project",
+		".lisp": "sbcl --script",
+		".kit": "kitc --run",
+		".v": "v run",
+		".vsh": "v run",
+		".sass": "sass --style expanded",
+		".cu": "cd $dir && nvcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		".ring": "ring",
+		".sml": "cd $dir && sml $fileName",
+		".mojo": "mojo run",
+		".erl": "escript",
+		".spwn": "spwn build",
+		".pkl": "cd $dir && pkl eval -f yaml $fileName -o $fileNameWithoutExt.yaml",
+		".gleam": "gleam run -m $fileNameWithoutExt"
+	},
+	"code-runner.executorMap": {
+		"javascript": "node",
+		"java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+		"c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"zig": "zig run",
+		"cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"php": "php",
+		"python": "python -u",
+		"perl": "perl",
+		"perl6": "perl6",
+		"ruby": "ruby",
+		"go": "go run",
+		"lua": "lua",
+		"groovy": "groovy",
+		"powershell": "powershell -ExecutionPolicy ByPass -File",
+		"bat": "cmd /c",
+		"shellscript": "bash",
+		"fsharp": "fsi",
+		"csharp": "scriptcs",
+		"vbscript": "cscript //Nologo",
+		"typescript": "ts-node",
+		"coffeescript": "coffee",
+		"scala": "scala",
+		"swift": "swift",
+		"julia": "julia",
+		"crystal": "crystal",
+		"ocaml": "ocaml",
+		"r": "Rscript",
+		"applescript": "osascript",
+		"clojure": "lein exec",
+		"haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+		"rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+		"racket": "racket",
+		"scheme": "csi -script",
+		"ahk": "autohotkey",
+		"autoit": "autoit3",
+		"dart": "dart",
+		"pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+		"d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+		"haskell": "runghc",
+		"nim": "nim compile --verbosity:0 --hints:off --run",
+		"lisp": "sbcl --script",
+		"kit": "kitc --run",
+		"v": "v run",
+		"sass": "sass --style expanded",
+		"scss": "scss --style expanded",
+		"less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+		"FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"sml": "cd $dir && sml $fileName",
+		"mojo": "mojo run",
+		"erlang": "escript",
+		"spwn": "spwn build",
+		"pkl": "cd $dir && pkl eval -f yaml $fileName -o $fileNameWithoutExt.yaml",
+		"gleam": "gleam run -m $fileNameWithoutExt"
+	},
+	"window.menuBarVisibility": "compact",
+	"[java]": {
+		"editor.defaultFormatter": "redhat.java"
+	}
+}
