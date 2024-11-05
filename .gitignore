@@ -1,0 +1,5 @@
+# Ensure LF endings for certain config files
+AppData/Local/nvim/* text eol=lf
+AppData/Roaming/Code/User/* text eol=lf
+AppData/Roaming/Codium/User/* text eol=lf
+.config/* text eol=lf
