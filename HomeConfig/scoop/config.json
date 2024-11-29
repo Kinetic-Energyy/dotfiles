@@ -1,0 +1,8 @@
+{
+  "last_update": "2024-11-24T20:36:44.4159079+05:30",
+  "scoop_repo": "https://github.com/ScoopInstaller/Scoop",
+  "scoop_branch": "master",
+  "alias": {
+    "search": "scoop-search"
+  }
+}
